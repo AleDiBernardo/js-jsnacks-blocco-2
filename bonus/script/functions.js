@@ -39,7 +39,7 @@ function printArray(array) {
 }
 
 /**
- * Remove first element
+ * Add element to head
  * @date 4/5/2024 - 3:38:40 PM
  *
  * @param {array} array
