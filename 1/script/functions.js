@@ -7,7 +7,7 @@
 function createArray(numOfArray) {
   let array = [];
   for (let i = 0; i < numOfArray; i++) {
-    array[i] = fillArray(array);
+    fillArray(array);
   }
 }
 
