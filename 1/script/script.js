@@ -9,6 +9,6 @@ do {
   num = parseInt(prompt("Inserisci un numero"));
 } while (isNaN(num));
 
-console.log(createArray(num));
+createArray(num);
 
 
