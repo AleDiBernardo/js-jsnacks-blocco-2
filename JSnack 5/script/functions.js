@@ -9,7 +9,9 @@ function fillArray(numbOfElem) {
   let array = [];
 
   for (let i = 0; i < numbOfElem; i++) {
-    array[i] = prompt(`Elemento numero ${i + 1}`);
+    do{
+      array[i] = prompt(`Elemento numero ${i + 1}`);
+    } while (array[i] === "")
   }
 
   return array;
@@ -23,7 +25,6 @@ function printArray(array) {
     } else {
       stringElem += `${array[i]}, `;
     }
-
   }
 
   return stringElem;
