@@ -15,7 +15,7 @@ const myArray = fillArray(numbOfElem);
 const elemToFind = prompt("Quale elemento vuoi cercare?");
 
 const result = findElemIndex(myArray, elemToFind);
-console.log(result);
+alert(`Trovato in posizione ` + result);
 
 
 

@@ -29,7 +29,7 @@ function findElemIndex(array, elemToFind) {
 
   for (let i = 0; i < array.length; i++) {
     if (elemToFind === array[i]) {
-      return alert(`Elemento trovato in posizione ${i}`);
+      return i;
     }
   }
 
