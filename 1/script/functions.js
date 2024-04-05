@@ -36,6 +36,12 @@ function randNum() {
   return Math.floor(Math.random() * 100) + 1;
 }
 
+/**
+ * Display arrays
+ * @date 4/5/2024 - 11:53:40 AM
+ *
+ * @param {*} array
+ */
 function createUlElem(array) {
   const listCtn = document.getElementById("list-ctn");
 
