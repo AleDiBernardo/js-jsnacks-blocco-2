@@ -48,7 +48,7 @@ function printArray(array) {
 function removeFromArrayHead(array) {
 
   const arrayB = [];
-  for (let i = 1; i < array.length; i++) {
+  for (let i = 0; i < array.length; i++) {
     
     arrayB[i - 1] = array[i];
   }
