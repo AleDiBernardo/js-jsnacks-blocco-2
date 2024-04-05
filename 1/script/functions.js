@@ -1,5 +1,3 @@
-
-
 /**
  * Create N array
  * @date 4/5/2024 - 11:36:33 AM
@@ -7,10 +5,10 @@
  * @param {number} numOfArray
  */
 function createArray(numOfArray) {
-    let array = [];
-    for (let i = 0; i < numOfArray; i++) {
-        array[i] = fillArray(array);
-    }
+  let array = [];
+  for (let i = 0; i < numOfArray; i++) {
+    array[i] = fillArray(array);
+  }
 }
 
 /**
@@ -20,11 +18,12 @@ function createArray(numOfArray) {
  * @param {number} array
  */
 function fillArray(array) {
-    for (let i = 0; i < 10; i++) {
-        array[i] = randNum();
-    }
+  for (let i = 0; i < 10; i++) {
+    array[i] = randNum();
+  }
 
-    console.log(array);
+  createUlElem(array);
+  console.log(array);
 }
 
 /**
@@ -34,5 +33,13 @@ function fillArray(array) {
  * @returns {number}
  */
 function randNum() {
-    return Math.floor(Math.random() * 100) + 1;
+  return Math.floor(Math.random() * 100) + 1;
+}
+
+function createUlElem(array) {
+  const listCtn = document.getElementById("list-ctn");
+
+  const listElem = document.createElement("li");
+  listElem.innerHTML += `${array}`;
+  listCtn.append(listElem);
 }
